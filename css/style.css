@@ -1,0 +1,31 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper::before, .wrapper::after {
+  content: '';
+  display: block;
+  height: 500vh;
+}
+
+.block {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block__body {
+  height: 75%;
+  width: 75%;
+  background-color: #794f45;
+}
